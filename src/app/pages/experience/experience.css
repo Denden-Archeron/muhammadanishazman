@@ -1,0 +1,278 @@
+:host {
+  display: block;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px 100px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.page-subtitle {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -24px;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  border: 3px solid #f8fafc;
+  z-index: 1;
+}
+
+.timeline-marker.current {
+  background: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+}
+
+.exp-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+}
+
+.exp-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exp-badge.current {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.exp-badge.intern {
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+.exp-card h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.exp-company {
+  margin: 2px 0 0;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.exp-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 6px 0 14px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.exp-separator {
+  margin: 0 4px;
+  color: #cbd5e1;
+}
+
+.exp-list {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.exp-list li {
+  color: #334155;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.metric {
+  color: #1e40af;
+  font-weight: 700;
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* Achievements */
+.achievements-section {
+  margin-top: 32px;
+}
+
+.achievements-section h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.achievement-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.achievement-number {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.achievement-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+/* Tools */
+.skills-tools {
+  margin-top: 32px;
+}
+
+.skills-tools h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.tool-name {
+  font-weight: 700;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.tool-category {
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .page-container {
+    padding: 32px 24px 48px;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  .exp-card {
+    padding: 24px;
+  }
+
+  .exp-card h3 {
+    font-size: 19px;
+  }
+
+  .exp-list li {
+    font-size: 14px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

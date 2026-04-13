@@ -1,0 +1,224 @@
+:host {
+  display: block;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px 100px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.page-subtitle {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.cert-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.counter-value {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.counter-label {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.3;
+}
+
+/* Vendor Sections */
+.cert-section {
+  margin-bottom: 24px;
+}
+
+.vendor-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.vendor-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.vendor-icon.cisco {
+  background: linear-gradient(135deg, #049fd9, #00bceb);
+}
+
+.vendor-icon.fortinet {
+  background: linear-gradient(135deg, #da291c, #ee3124);
+}
+
+.vendor-icon.paloalto {
+  background: linear-gradient(135deg, #fa582d, #ff6b35);
+  font-size: 12px;
+}
+
+.vendor-icon.yealink {
+  background: linear-gradient(135deg, #005baa, #0072d2);
+}
+
+.vendor-icon.zoom {
+  background: linear-gradient(135deg, #2d8cff, #0b5cff);
+}
+
+.vendor-icon.microsoft {
+  background: linear-gradient(135deg, #0078d4, #00bcf2);
+}
+
+.vendor-icon.elatih {
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+  font-size: 12px;
+}
+
+.vendor-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.vendor-subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* Groups */
+.group-title {
+  margin: 0 0 10px;
+  padding: 6px 12px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.cert-group {
+  margin-bottom: 16px;
+}
+
+/* Cert List */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  transition: border-color 0.2s ease;
+}
+
+.cert-item:hover {
+  border-color: #bfdbfe;
+}
+
+.cert-item.featured {
+  border-left: 3px solid #2563eb;
+}
+
+.cert-check {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ecfdf5;
+  color: #059669;
+  border-radius: 50%;
+}
+
+.cert-check.mini {
+  width: 24px;
+  height: 24px;
+}
+
+.cert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cert-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cert-detail {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.cert-list.compact .cert-item {
+  padding: 10px;
+}
+
+.cert-list.compact .cert-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .page-container {
+    padding: 32px 24px 48px;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  .cert-item {
+    padding: 14px 16px;
+  }
+
+  .cert-name {
+    font-size: 14px;
+  }
+
+  .cert-detail {
+    font-size: 13px;
+  }
+}
