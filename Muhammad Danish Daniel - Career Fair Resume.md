@@ -7,7 +7,7 @@ Portfolio: muhammadanishazman.dev
 
 ## PROFESSIONAL SUMMARY
 
-Recent Bachelor of Computer Science (Hons.) graduate specializing in Computer Networks with hands-on experience in cloud infrastructure deployment, network operations, server administration, and technical support for SME and B2B environments. Completed the full Cisco CCNA learning track (8 certificates) and hold Fortinet cybersecurity certifications including FortiGate 7.6 Operator. Deployed production monitoring and automation platforms on Microsoft Azure cloud infrastructure with additional cloud operations experience on DigitalOcean. Delivered measurable internship results — 95% proposal acceptance rate and 85% faster incident resolution. Combines strong networking foundation with real-world cloud deployment, containerization, and infrastructure automation capabilities.
+Recent Bachelor of Computer Science (Hons.) graduate specializing in Computer Networks with hands-on experience in cloud infrastructure deployment, network operations, server administration, and technical support for SME and B2B environments. Completed the full Cisco CCNA learning track (8 certificates) and CyberOps Associate, and hold Fortinet cybersecurity certifications including FortiGate 7.6 Operator. Deployed production monitoring and automation platforms on Microsoft Azure cloud infrastructure with additional cloud operations experience on DigitalOcean. Delivered measurable internship results — 95% proposal acceptance rate and 85% faster incident resolution. Combines strong networking foundation with real-world cloud deployment, containerization, and infrastructure automation capabilities.
 
 **Core Competencies:** Network Engineering | Cloud Infrastructure (Azure, DigitalOcean) | Server Administration | Docker Containerization | Infrastructure Automation (Ansible) | Monitoring & Observability | Cybersecurity Fundamentals | Technical Support
 
@@ -31,8 +31,9 @@ Recent Bachelor of Computer Science (Hons.) graduate specializing in Computer Ne
 
 ## CERTIFICATIONS
 
-**Cisco Networking Academy (8 Certificates)**
+**Cisco Networking Academy (9 Certificates)**
 - CCNA: Introduction to Networks | Switching, Routing, and Wireless Essentials | Enterprise Networking, Security, and Automation
+- CyberOps Associate
 - CSST Network Technician Career Path
 - Networking Basics | Network Addressing and Basic Troubleshooting | Network Support and Security | Networking Devices and Initial Configuration
 

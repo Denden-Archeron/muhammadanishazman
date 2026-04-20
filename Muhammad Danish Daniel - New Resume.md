@@ -7,7 +7,7 @@ Portfolio: muhammadanishazman.dev
 
 ## PROFESSIONAL SUMMARY
 
-Infrastructure-focused Computer Science graduate with hands-on experience deploying and managing production cloud environments on Microsoft Azure and DigitalOcean. Built and operated a full-stack monitoring platform using Prometheus, Grafana, and Uptime Kuma on Azure VMs, and automated server provisioning with Ansible playbooks achieving 90% deployment time reduction. Completed the full Cisco CCNA learning track (8 certificates) and hold Fortinet certifications including FortiGate 7.6 Operator. Experienced in Docker containerization, Linux server administration, Nginx reverse proxy configuration, and CIS benchmark-aligned security hardening. Seeking a Junior Infrastructure Engineer role to apply cloud operations, automation, and security skills in enterprise environments.
+Infrastructure-focused Computer Science graduate with hands-on experience deploying and managing production cloud environments on Microsoft Azure and DigitalOcean. Built and operated a full-stack monitoring platform using Prometheus, Grafana, and Uptime Kuma on Azure VMs, and automated server provisioning with Ansible playbooks achieving 90% deployment time reduction. Completed the full Cisco CCNA learning track (8 certificates) plus CyberOps Associate, and hold Fortinet certifications including FortiGate 7.6 Operator. Experienced in Docker containerization, Linux server administration, Nginx reverse proxy configuration, and CIS benchmark-aligned security hardening. Seeking a Junior Infrastructure Engineer role to apply cloud operations, automation, and security skills in enterprise environments.
 
 ---
 
@@ -33,7 +33,7 @@ Infrastructure-focused Computer Science graduate with hands-on experience deploy
 
 ## CERTIFICATIONS
 
-**Cisco Networking Academy** — CCNA: Introduction to Networks | Switching, Routing, and Wireless Essentials | Enterprise Networking, Security, and Automation | CSST Network Technician Career Path (+ 4 foundation certificates)
+**Cisco Networking Academy** — CCNA: Introduction to Networks | Switching, Routing, and Wireless Essentials | Enterprise Networking, Security, and Automation | CyberOps Associate | CSST Network Technician Career Path (+ 4 foundation certificates)
 
 **Fortinet** — Fortinet Certified Associate (FCA) in Cybersecurity | Fortinet Certified Fundamentals (FCF) | FortiGate 7.6 Operator
 

@@ -200,6 +200,69 @@
   font-weight: 600;
 }
 
+/* Badges Section */
+.badges-section {
+  margin-bottom: 28px;
+}
+
+.badges-section h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.badge-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 8px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-align: center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge-card:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+.badge-card img {
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.badge-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #334155;
+  line-height: 1.3;
+}
+
+/* Certificate Links */
+.cert-link {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+  margin-top: 2px;
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
 /* Desktop */
 @media (min-width: 768px) {
   .page-container {

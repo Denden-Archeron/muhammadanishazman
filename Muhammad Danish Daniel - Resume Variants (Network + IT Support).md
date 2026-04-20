@@ -33,10 +33,11 @@ Network-focused Computer Science graduate with the complete Cisco CCNA learning 
 
 ### CERTIFICATIONS
 
-**Cisco Networking Academy (8 Certificates)**
+**Cisco Networking Academy (9 Certificates)**
 - CCNA: Introduction to Networks
 - CCNA: Switching, Routing, and Wireless Essentials
 - CCNA: Enterprise Networking, Security, and Automation
+- CyberOps Associate
 - CSST Network Technician Career Path
 - Networking Basics | Network Addressing and Basic Troubleshooting | Network Support and Security | Networking Devices and Initial Configuration
 
@@ -120,7 +121,7 @@ IT Support-oriented Computer Science graduate with practical experience in incid
 
 ### CERTIFICATIONS
 
-**Cisco Networking Academy** — CCNA: Introduction to Networks | Switching, Routing, and Wireless Essentials | Enterprise Networking, Security, and Automation | CSST Network Technician Career Path (+ 4 foundation certificates)
+**Cisco Networking Academy** — CCNA: Introduction to Networks | Switching, Routing, and Wireless Essentials | Enterprise Networking, Security, and Automation | CyberOps Associate | CSST Network Technician Career Path (+ 4 foundation certificates)
 
 **Fortinet** — Fortinet Certified Associate (FCA) in Cybersecurity | Fortinet Certified Fundamentals (FCF) | FortiGate 7.6 Operator | Threat Landscape 3.0 | Technical Introduction to Cybersecurity 3.0
 
