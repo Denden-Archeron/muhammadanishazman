@@ -22,18 +22,11 @@
 }
 
 .brand-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, #7c6af9, #38bdf8);
-  color: #ffffff;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 13px;
-  font-family: var(--font-heading);
-  letter-spacing: -0.3px;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 .brand-text {
