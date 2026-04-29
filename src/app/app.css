@@ -3,12 +3,12 @@
 }
 
 .main-content {
-  padding-bottom: 64px; /* Space for bottom nav on mobile */
+  padding-bottom: 72px;
 }
 
 @media (min-width: 768px) {
   .main-content {
-    padding-top: 64px; /* Space for top nav on desktop */
+    padding-top: 68px;
     padding-bottom: 0;
   }
 }

@@ -3,72 +3,81 @@
 }
 
 .page-container {
-  max-width: 800px;
+  max-width: 820px;
   margin: 0 auto;
-  padding: 24px 16px 100px;
+  padding: 28px 20px 108px;
 }
 
 .page-header {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .page-header h1 {
   margin: 0;
-  font-size: 26px;
-  font-weight: 800;
-  color: #0f172a;
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-1);
+  letter-spacing: -0.3px;
 }
 
 .page-subtitle {
-  margin: 4px 0 0;
-  color: #64748b;
+  margin: 5px 0 0;
+  color: var(--text-2);
   font-size: 14px;
 }
 
-/* Timeline */
+/* ── Timeline ── */
 .timeline {
   position: relative;
-  padding-left: 24px;
+  padding-left: 26px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 6px;
-  top: 8px;
-  bottom: 8px;
+  left: 7px;
+  top: 10px;
+  bottom: 10px;
   width: 2px;
-  background: #e2e8f0;
+  background: linear-gradient(to bottom, var(--accent), transparent);
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .timeline-marker {
   position: absolute;
-  left: -24px;
-  top: 24px;
+  left: -26px;
+  top: 26px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #e2e8f0;
-  border: 3px solid #f8fafc;
+  background: var(--surface-3);
+  border: 2px solid var(--border);
   z-index: 1;
 }
 
 .timeline-marker.current {
-  background: #2563eb;
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(124, 106, 249, 0.2),
+              0 0 12px rgba(124, 106, 249, 0.4);
 }
 
+/* ── Experience Card ── */
 .exp-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 18px;
-  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  transition: var(--transition);
+}
+
+.exp-card:hover {
+  border-color: var(--border-accent);
 }
 
 .exp-badge {
@@ -76,34 +85,36 @@
   font-size: 11px;
   font-weight: 700;
   padding: 3px 10px;
-  border-radius: 6px;
-  margin-bottom: 8px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 9px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-family: var(--font-mono);
 }
 
 .exp-badge.current {
-  background: #ecfdf5;
-  color: #047857;
-  border: 1px solid #a7f3d0;
+  background: rgba(74, 222, 128, 0.1);
+  color: var(--accent-green);
+  border: 1px solid rgba(74, 222, 128, 0.25);
 }
 
 .exp-badge.intern {
-  background: #eff6ff;
-  color: #1e40af;
-  border: 1px solid #bfdbfe;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent-sky);
+  border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
 .exp-card h3 {
   margin: 0;
+  font-family: var(--font-heading);
   font-size: 17px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--text-1);
 }
 
 .exp-company {
-  margin: 2px 0 0;
-  color: #2563eb;
+  margin: 3px 0 0;
+  color: var(--accent-bright);
   font-size: 14px;
   font-weight: 600;
 }
@@ -113,60 +124,64 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 4px;
-  margin: 6px 0 14px;
-  color: #64748b;
+  margin: 7px 0 16px;
+  color: var(--text-3);
   font-size: 12px;
+  font-family: var(--font-mono);
 }
 
 .exp-separator {
   margin: 0 4px;
-  color: #cbd5e1;
+  color: var(--border);
 }
 
 .exp-list {
   margin: 0;
-  padding-left: 16px;
+  padding-left: 18px;
 }
 
 .exp-list li {
-  color: #334155;
+  color: var(--text-2);
   font-size: 13px;
-  line-height: 1.6;
-  margin-bottom: 8px;
+  line-height: 1.7;
+  margin-bottom: 9px;
 }
 
 .metric {
-  color: #1e40af;
+  color: var(--accent-orange);
   font-weight: 700;
+  font-family: var(--font-mono);
 }
 
 .exp-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .tag {
   display: inline-block;
   padding: 4px 10px;
-  background: #f1f5f9;
-  color: #475569;
+  background: rgba(124, 106, 249, 0.08);
+  color: var(--text-2);
   font-size: 11px;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(124, 106, 249, 0.15);
 }
 
-/* Achievements */
+/* ── Achievements ── */
 .achievements-section {
-  margin-top: 32px;
+  margin-top: 36px;
 }
 
 .achievements-section h2 {
   margin: 0 0 16px;
-  font-size: 20px;
-  font-weight: 800;
-  color: #0f172a;
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text-1);
 }
 
 .achievements-grid {
@@ -176,14 +191,18 @@
 }
 
 .achievement-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  padding: 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px;
   display: flex;
-  gap: 14px;
+  gap: 16px;
   align-items: flex-start;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: var(--transition);
+}
+
+.achievement-card:hover {
+  border-color: var(--border-accent);
 }
 
 .achievement-number {
@@ -193,30 +212,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  background: linear-gradient(135deg, var(--accent), var(--accent-sky));
   color: #ffffff;
   font-size: 13px;
-  font-weight: 800;
-  border-radius: 10px;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
 }
 
 .achievement-card p {
   margin: 0;
   font-size: 13px;
-  color: #334155;
-  line-height: 1.5;
+  color: var(--text-2);
+  line-height: 1.6;
 }
 
-/* Tools */
+/* ── Tools ── */
 .skills-tools {
-  margin-top: 32px;
+  margin-top: 36px;
 }
 
 .skills-tools h2 {
   margin: 0 0 16px;
-  font-size: 20px;
-  font-weight: 800;
-  color: #0f172a;
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text-1);
 }
 
 .tools-grid {
@@ -228,36 +249,44 @@
 .tool-item {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  padding: 12px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  gap: 3px;
+  padding: 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.tool-item:hover {
+  border-color: var(--border-accent);
+  background: var(--surface-3);
 }
 
 .tool-name {
+  font-family: var(--font-heading);
   font-weight: 700;
   font-size: 13px;
-  color: #0f172a;
+  color: var(--text-1);
 }
 
 .tool-category {
   font-size: 11px;
-  color: #64748b;
+  color: var(--text-3);
+  font-family: var(--font-mono);
 }
 
-/* Desktop */
+/* ── Desktop ── */
 @media (min-width: 768px) {
   .page-container {
-    padding: 32px 24px 48px;
+    padding: 36px 28px 56px;
   }
 
   .page-header h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .exp-card {
-    padding: 24px;
+    padding: 26px;
   }
 
   .exp-card h3 {

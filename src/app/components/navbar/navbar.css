@@ -4,10 +4,10 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  border-top: 1px solid #e2e8f0;
-  padding: 0;
+  background: rgba(13, 13, 20, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border);
 }
 
 .nav-brand {
@@ -19,7 +19,6 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #0f172a;
 }
 
 .brand-icon {
@@ -28,18 +27,20 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  background: linear-gradient(135deg, #7c6af9, #38bdf8);
   color: #ffffff;
   border-radius: 10px;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: -0.5px;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: var(--font-heading);
+  letter-spacing: -0.3px;
 }
 
 .brand-text {
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-weight: 600;
   font-size: 16px;
-  color: #0f172a;
+  color: var(--text-1);
 }
 
 .nav-toggle {
@@ -56,9 +57,9 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: #0f172a;
+  background: var(--text-1);
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 .hamburger {
@@ -72,49 +73,35 @@
   left: 0;
 }
 
-.hamburger::before {
-  top: -7px;
-}
+.hamburger::before { top: -7px; }
+.hamburger::after { top: 7px; }
 
-.hamburger::after {
-  top: 7px;
-}
-
-.hamburger.active {
-  background: transparent;
-}
-
-.hamburger.active::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.hamburger.active::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
+.hamburger.active { background: transparent; }
+.hamburger.active::before { top: 0; transform: rotate(45deg); }
+.hamburger.active::after { top: 0; transform: rotate(-45deg); }
 
 /* Mobile: Bottom tab bar */
 .nav-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 6px 0 env(safe-area-inset-bottom, 6px);
+  padding: 8px 4px env(safe-area-inset-bottom, 8px);
 }
 
 .nav-menu a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 3px;
   text-decoration: none;
-  color: #64748b;
+  color: var(--text-3);
   font-size: 10px;
   font-weight: 600;
-  padding: 6px 4px;
-  border-radius: 8px;
-  transition: color 0.2s ease;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
   min-width: 48px;
+  position: relative;
 }
 
 .nav-menu a svg {
@@ -123,11 +110,23 @@
 }
 
 .nav-menu a.active {
-  color: #2563eb;
+  color: var(--accent-bright);
+}
+
+.nav-menu a.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-sky));
+  border-radius: 0 0 4px 4px;
 }
 
 .nav-menu a:hover {
-  color: #1e40af;
+  color: var(--text-2);
 }
 
 /* Desktop: Top navbar */
@@ -137,12 +136,12 @@
     top: 0;
     bottom: auto;
     border-top: none;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 24px;
-    height: 64px;
+    padding: 0 28px;
+    height: 68px;
   }
 
   .nav-brand {
@@ -151,31 +150,47 @@
 
   .nav-menu {
     justify-content: flex-end;
-    gap: 4px;
+    gap: 2px;
     padding: 0;
   }
 
   .nav-menu a {
     flex-direction: row;
     gap: 6px;
-    font-size: 14px;
+    font-size: 13px;
     padding: 8px 14px;
     min-width: auto;
+    border-radius: var(--radius-md);
+    font-family: var(--font-heading);
   }
 
   .nav-menu a svg {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .nav-menu a.active {
+    background: rgba(124, 106, 249, 0.12);
+    color: var(--accent-bright);
+  }
+
+  .nav-menu a.active::before {
+    display: none;
+  }
+
+  .nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-2);
   }
 }
 
 @media (min-width: 1024px) {
   .navbar {
-    padding: 0 40px;
+    padding: 0 48px;
   }
 
   .nav-menu {
-    gap: 6px;
+    gap: 4px;
   }
 
   .nav-menu a {
